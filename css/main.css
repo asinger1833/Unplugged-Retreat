@@ -618,7 +618,6 @@ aside .content-wrapper .form {
 
 }
 
-/* ----------------------------------------Q&A-------------------------------
 
 /* Footer */
 
@@ -647,7 +646,6 @@ footer h4 {
 footer P {
   line-height: 1.285;
 }
-
 
 footer .copyright {
   width: 100%;
@@ -706,13 +704,12 @@ footer .copyright {
   line-height: 1.125;
 }
 
-/*-----------------------------------------------Q&A------------------------------
 
 @media only screen and (min-width: 1200px) { 
   
   /*---desktop styles here-----*/
 
-  header {
+header {
   padding: 15px 0;
 }
 .content-wrapper {
@@ -767,7 +764,6 @@ aside .content-wrapper .form {
   width: 90%;
 }
 
-/*------------------------------------------------Q&A-----------------------------------
 
 .features-article {
   flex-basis: 33%;
@@ -788,7 +784,6 @@ aside .content-wrapper .form {
 footer h4 {
   font-size: 1.875em;
 }
-
 
 
 
