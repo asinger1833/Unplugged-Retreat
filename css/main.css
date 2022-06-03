@@ -684,9 +684,9 @@ footer .content-wrapper {
 
 footer .footer-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 footer .contact {
@@ -737,6 +737,10 @@ footer .copyright {
   font-size: 1.5em;
 }
 
+.map-figure {
+  width: 45.5%;
+
+}
 
 
 /* ---------FAQ Page---------- */
@@ -844,6 +848,9 @@ footer h4 {
 
 /*---------About Page----------*/
 
+.map figure {
+  padding-bottom: 37.5%;
+}
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 95%;
@@ -858,6 +865,7 @@ footer h4 {
 
 .faq h2 {
   width: 100%;
+  font-size: 3em;
 }
 
 
