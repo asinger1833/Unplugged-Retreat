@@ -333,12 +333,12 @@ input[type=button] {
 
 
 .features {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
   background-image: url('../assets/rawpixel-800820-unsplash1.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 
 }
 
@@ -358,16 +358,16 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.features p {
-  text-align: center;
-  margin: 0;
-}
-
-features i {
+.features i {
   font-size: 3.75em;
     margin-bottom: 40px;
 }
 
+
+.features p {
+  text-align: center;
+  margin: 0;
+}
 
 /* Reviews */
 
