@@ -97,15 +97,17 @@ html {
 
 
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: left;
+  font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   
 }
 
@@ -120,15 +122,16 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  margin: 20px 0;
   font-weight: 500;
   font-size: 1.125em;
+  margin: 20px 0;
   
 }
 
@@ -142,7 +145,7 @@ img {
 }
 
 figure {
-      margin: 0;
+  margin: 0;
 }
 
 
@@ -155,6 +158,7 @@ address {
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
+
 }
 
 
@@ -165,11 +169,12 @@ address {
 
 header,
 footer {
+  background-color: #202322; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #202322;
+  
 }
 
 header {
@@ -194,28 +199,30 @@ header figure {
 }
 
 .header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
   background: #3a3a3a; 
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.125em;
+  
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+
 }
  
 header nav ul li {
@@ -224,8 +231,8 @@ header nav ul li {
 
 
 footer {
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 
 }
 
@@ -253,10 +260,18 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 
+}
+
+footer .social-icons p {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -271,21 +286,20 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background-image: url('../assets/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url('../assets/jake-melara-30679-unsplash.jpg');
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-
+    
 }
 
 .hero-area h1 { 
-
+  font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 2.25em;
   line-height: 1.2;
 }
 
@@ -360,7 +374,7 @@ input[type=button] {
 
 .features i {
   font-size: 3.75em;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 
@@ -372,10 +386,10 @@ input[type=button] {
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
   
 }
 
@@ -397,12 +411,12 @@ input[type=button] {
 
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
-
+  
 }
 
 .map-figure {
@@ -422,11 +436,12 @@ input[type=button] {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
+  
 }
 
 .contact-content p { 
@@ -439,20 +454,22 @@ input[type=button] {
 
 /* ---------- FAQ Page ---------- */
 .faq {
+  background-color: #527158; 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #527158;
+ 
 }
 
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
+  
 }
 
 .faq h2 {
@@ -613,7 +630,7 @@ header nav ul {
   /*Hero Area */
 
 .hero-area {
-min-height: 600px;
+  min-height: 600px;
 }
 
 .hero-area h1 {
@@ -657,6 +674,9 @@ aside .content-wrapper .form {
   width: 62%;
 }
 
+.features i {
+  margin-bottom: 30px;
+}
 
 /* Reviews */
 
@@ -669,6 +689,7 @@ aside .content-wrapper .form {
   width: 85%;
 }
 
+.reviews article figure,
 .reviews article div {
   width: 49%;
 }
@@ -708,6 +729,11 @@ footer P {
   line-height: 1.285;
 }
 
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
 footer .copyright {
   width: 100%;
 }
@@ -728,6 +754,10 @@ footer .copyright {
 
 }
 
+.map figure {
+  padding-bottom: 45.5%;
+}
+
 .contact-section .content-wrapper h2 {
   width: 80%;
 }
@@ -743,10 +773,6 @@ footer .copyright {
   font-size: 1.5em;
 }
 
-.map-figure {
-  width: 45.5%;
-
-}
 
 
 /* ---------FAQ Page---------- */
@@ -777,10 +803,11 @@ footer .copyright {
 header {
   padding: 15px 0;
 }
+
 .content-wrapper {
   max-width: 960px;
    }
-}
+
 
 h2 {
   font-size: 2.25em;
@@ -827,8 +854,8 @@ aside .content-wrapper .form {
 
 .features h2 {
   width: 90%;
-}
 
+}
 
 .features-article {
   flex-basis: 33%;
@@ -857,6 +884,7 @@ footer h4 {
 .map figure {
   padding-bottom: 37.5%;
 }
+
 .mission h2,
 .contact-section .content-wrapper h2 {
   width: 95%;
@@ -881,6 +909,7 @@ footer h4 {
   line-height: 1;
 }
 
+}
 
 
 
